@@ -16,8 +16,8 @@ public class ScheduleController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void createSchedule (@RequestBody Schedule schedule){
-        service.createSchedule(schedule);
+    public Schedule createSchedule (@RequestBody Schedule schedule){
+       return service.createSchedule(schedule);
     }
 
     @GetMapping ("{id_schedule}")

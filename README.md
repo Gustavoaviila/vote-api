@@ -7,7 +7,7 @@ Os comandos apresentados são necessários para compilar o projeto e preparar/ex
 1 - Realizado o build do projeto A execução do build do projeto é necessária para gerar os binários da aplicação, bem como gerar os arquivos para que seja possível a construção da imagem docker:
 
 mvn package
-2 - Construir imagem docker docker build -t vote-api:v1.3 . 
+2 - Construir imagem docker docker build -t vote-api:v1 . 
 
 3 - Executar a imagem Docker docker-compose up -d Obs: as portas são customizaveis
 
